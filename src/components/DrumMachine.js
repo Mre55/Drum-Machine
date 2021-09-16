@@ -2,15 +2,6 @@
 import React from 'react';
 import './DrumMachine.css';
 
-import Q from '../assets/Q.wav'
-import W from '../assets/W.wav'
-import E from '../assets/E.wav'
-import A from '../assets/A.wav'
-import S from '../assets/S.wav'
-import D from '../assets/D.wav'
-import Z from '../assets/Z.wav'
-import X from '../assets/X.wav'
-import C from '../assets/C.wav'
 class DrumMachine extends React.Component {
 
       constructor(props){
@@ -172,43 +163,43 @@ class DrumMachine extends React.Component {
                               <div className="digits">
                                     
                                     <div className="drum-pad" id="Heater-1" onClick={this.handleChange}>
-                                          <audio className="clip" id="Q" src={Q}></audio>
+                                          <audio className="clip" id="Q" src='https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3'></audio>
                                           Q
                                     </div>      
                                     <div className="drum-pad" id="Heater-2" onClick={this.handleChange}>
-                                          <audio className="clip" id="W" src={W}></audio>
+                                          <audio className="clip" id="W" src='https://s3.amazonaws.com/freecodecamp/drums/Chord_2.mp3'></audio>
                                           W
                                     </div>      
                                     <div className="drum-pad" id="Heater-3" onClick={this.handleChange}>
-                                          <audio className="clip" id="E" src={E}></audio>
+                                          <audio className="clip" id="E" src='https://s3.amazonaws.com/freecodecamp/drums/Chord_3.mp3'></audio>
                                           E
                                     </div>  
                                     <br />
 
                                     <div className="drum-pad" id="Heater-4" onClick={this.handleChange}>
-                                          <audio className="clip" id="A" src={A}></audio>
+                                          <audio className="clip" id="A" src='https://s3.amazonaws.com/freecodecamp/drums/Give_us_a_light.mp3'></audio>
                                           A
                                     </div>      
                                     <div className="drum-pad" id="Heater-5" onClick={this.handleChange}>
-                                          <audio className="clip" id="S" src={S}></audio>
+                                          <audio className="clip" id="S" src='https://s3.amazonaws.com/freecodecamp/drums/Dry_Ohh.mp3'></audio>
                                           S
                                     </div>      
                                     <div className="drum-pad" id="Heater-6" onClick={this.handleChange}>
-                                          <audio className="clip" id="D" src={D}></audio>
+                                          <audio className="clip" id="D" src='https://s3.amazonaws.com/freecodecamp/drums/Bld_H1.mp3'></audio>
                                           D
                                     </div>    
                                     <br />
 
                                     <div className="drum-pad" id="Heater-7" onClick={this.handleChange}>
-                                          <audio className="clip" id="Z" src={Z}></audio>
+                                          <audio className="clip" id="Z" src='https://s3.amazonaws.com/freecodecamp/drums/punchy_kick_1.mp3'></audio>
                                           Z
                                     </div>      
                                     <div className="drum-pad" id="Heater-8" onClick={this.handleChange}>
-                                          <audio className="clip" id="X" src={X}></audio>
+                                          <audio className="clip" id="X" src='https://s3.amazonaws.com/freecodecamp/drums/side_stick_1.mp3'></audio>
                                           X
                                     </div>      
                                     <div className="drum-pad" id="Heater-9" onClick={this.handleChange}>
-                                          <audio className="clip" id="C" src={C}></audio>
+                                          <audio className="clip" id="C" src='https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3'></audio>
                                           C
                                     </div>      
 
