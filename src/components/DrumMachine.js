@@ -1,8 +1,16 @@
 
 import React from 'react';
 import './DrumMachine.css';
-import useKeyPress from 'react-use-keypress'
 
+import Q from '../assets/Q.wav'
+import W from '../assets/W.wav'
+import E from '../assets/E.wav'
+import A from '../assets/A.wav'
+import S from '../assets/S.wav'
+import D from '../assets/D.wav'
+import Z from '../assets/Z.wav'
+import X from '../assets/X.wav'
+import C from '../assets/C.wav'
 class DrumMachine extends React.Component {
 
       constructor(props){
@@ -14,9 +22,17 @@ class DrumMachine extends React.Component {
             this.handleKeyPress = this.handleKeyPress.bind(this);
       }
 
+      componentDidMount() {
+            document.addEventListener("keydown", this.handleKeyPress)
+      }
+
+      componentWillUnmount() {
+            document.removeEventListener("keydown", this.handleKeyPress);
+      }
+
       handleKeyPress = (event) => {
           
-            switch(event.key.toLowerCase()) {
+            switch(event.key) {
                   case 'q':
                         this.setState({
                               currentString: 'Heater 1'
@@ -71,21 +87,18 @@ class DrumMachine extends React.Component {
                         })
                         document.getElementById('C').play();
                         break;  
+                  default:
+                        this.setState({
+                              currentString: ''
+                        })
             }
-      }
-
-      componentDidMount() {
-            document.addEventListener("keydown", this.handleKeyPress)
-      }
-
-      componentWillUnmount() {
-            document.removeEventListener("keydown", this.handleKeyPress);
       }
 
       handleChange (event) {
 
-            let para = event.target.innerText;
             
+            let para = event.target.innerText;
+
             switch(para) {
                   case 'Q':
                         this.setState({
@@ -141,6 +154,10 @@ class DrumMachine extends React.Component {
                         })
                         document.getElementById('C').play();
                         break;  
+                  default:
+                        this.setState({
+                              currentString: ''
+                        })
             }
       }
       
@@ -154,44 +171,45 @@ class DrumMachine extends React.Component {
                         
                               <div className="digits">
                       
+                                    
                                     <div className="drum-pad" id="Heater-1" onClick={this.handleChange}>
-                                          <audio className="clip" id="Q" src='./Q.wav' ></audio>
+                                          <audio className="clip" id="Q" src={Q}></audio>
                                           Q
                                     </div>      
                                     <div className="drum-pad" id="Heater-2" onClick={this.handleChange}>
-                                          <audio className="clip" id="W" src='./W.wav' ></audio>
+                                          <audio className="clip" id="W" src={W}></audio>
                                           W
                                     </div>      
                                     <div className="drum-pad" id="Heater-3" onClick={this.handleChange}>
-                                          <audio className="clip" id="E" src='./E.wav' ></audio>
+                                          <audio className="clip" id="E" src={E}></audio>
                                           E
                                     </div>  
                                     <br />
 
                                     <div className="drum-pad" id="Heater-4" onClick={this.handleChange}>
-                                          <audio className="clip" id="A" src='./A.wav' ></audio>
+                                          <audio className="clip" id="A" src={A}></audio>
                                           A
                                     </div>      
                                     <div className="drum-pad" id="Heater-5" onClick={this.handleChange}>
-                                          <audio className="clip" id="S" src='./S.wav' ></audio>
+                                          <audio className="clip" id="S" src={S}></audio>
                                           S
                                     </div>      
                                     <div className="drum-pad" id="Heater-6" onClick={this.handleChange}>
-                                          <audio className="clip" id="D" src='./D.wav' ></audio>
+                                          <audio className="clip" id="D" src={D}></audio>
                                           D
                                     </div>    
                                     <br />
 
                                     <div className="drum-pad" id="Heater-7" onClick={this.handleChange}>
-                                          <audio className="clip" id="Z" src='./Z.wav' ></audio>
+                                          <audio className="clip" id="Z" src={Z}></audio>
                                           Z
                                     </div>      
                                     <div className="drum-pad" id="Heater-8" onClick={this.handleChange}>
-                                          <audio className="clip" id="X" src='./X.wav' ></audio>
+                                          <audio className="clip" id="X" src={X}></audio>
                                           X
                                     </div>      
                                     <div className="drum-pad" id="Heater-9" onClick={this.handleChange}>
-                                          <audio className="clip" id="C" src='./C.wav' ></audio>
+                                          <audio className="clip" id="C" src={C}></audio>
                                           C
                                     </div>      
 
