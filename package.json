@@ -15,7 +15,7 @@
     "web-vitals": "^1.0.1"
   },
 
-  "homepage": "http://Mre55.github.io/drum-machine",
+  "homepage": "http://Mre55.github.io/Drum-Machine",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
