@@ -30,58 +30,58 @@ class DrumMachine extends React.Component {
             document.removeEventListener("keydown", this.handleKeyPress);
       }
 
-      handleKeyPress = (event) => {
-          
-            switch(event.key) {
-                  case 'q':
+      handleKeyPress (event) {
+
+            switch(event.keyCode) {
+                  case 81:
                         this.setState({
                               currentString: 'Heater 1'
                         })
                         document.getElementById('Q').play();
                         break;
-                  case 'w':
+                  case 87:
                         this.setState({
                               currentString: 'Heater 2'
                         })
                         document.getElementById('W').play();
                         break;
-                  case 'e':
+                  case 69:
                         this.setState({
                               currentString: 'Heater 3'
                         })
                         document.getElementById('E').play();
                         break;
-                  case 'a':
+                  case 65:
                         this.setState({
                               currentString: 'Clap'
                         })
                         document.getElementById('A').play();
                         break;
-                  case 's':
+                  case 83:
                         this.setState({
                               currentString: 'Heater 4'
                         })
                         document.getElementById('S').play();
                         break;
-                  case 'd':
+                  case 68:
                         this.setState({
                               currentString: 'Open HH'
                         })
                         document.getElementById('D').play();
                         break;
-                  case 'z':
+                  case 90:
                         this.setState({
                               currentString: 'Kick n’ Hat'
                         })
                         document.getElementById('Z').play();
                         break;
-                  case 'x':
+                  case 88:
                         this.setState({
                               currentString: 'Kick'
                         })
                         document.getElementById('X').play();
                         break;
-                  case 'c':
+                  case 67:
                         this.setState({
                               currentString: 'Closed HH'
                         })
@@ -92,10 +92,10 @@ class DrumMachine extends React.Component {
                               currentString: ''
                         })
             }
+
       }
 
       handleChange (event) {
-
             
             let para = event.target.innerText;
 
@@ -170,7 +170,6 @@ class DrumMachine extends React.Component {
                         <div id="drum-machine">
                         
                               <div className="digits">
-                      
                                     
                                     <div className="drum-pad" id="Heater-1" onClick={this.handleChange}>
                                           <audio className="clip" id="Q" src={Q}></audio>
