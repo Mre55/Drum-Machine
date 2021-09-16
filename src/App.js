@@ -1,4 +1,5 @@
-import DrumMachine from './components/DrumMachine'
+import DrumMachine from './components/DrumMachine';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
