@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/drum-machine/static/css/main.90214933.chunk.css",
-    "main.js": "/drum-machine/static/js/main.715fbd16.chunk.js",
-    "main.js.map": "/drum-machine/static/js/main.715fbd16.chunk.js.map",
-    "runtime-main.js": "/drum-machine/static/js/runtime-main.34089336.js",
-    "runtime-main.js.map": "/drum-machine/static/js/runtime-main.34089336.js.map",
-    "static/css/2.818011ed.chunk.css": "/drum-machine/static/css/2.818011ed.chunk.css",
-    "static/js/2.d534290f.chunk.js": "/drum-machine/static/js/2.d534290f.chunk.js",
-    "static/js/2.d534290f.chunk.js.map": "/drum-machine/static/js/2.d534290f.chunk.js.map",
-    "index.html": "/drum-machine/index.html",
-    "static/css/2.818011ed.chunk.css.map": "/drum-machine/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.90214933.chunk.css.map": "/drum-machine/static/css/main.90214933.chunk.css.map",
-    "static/js/2.d534290f.chunk.js.LICENSE.txt": "/drum-machine/static/js/2.d534290f.chunk.js.LICENSE.txt"
+    "main.css": "/Drum-Machine/static/css/main.90214933.chunk.css",
+    "main.js": "/Drum-Machine/static/js/main.715fbd16.chunk.js",
+    "main.js.map": "/Drum-Machine/static/js/main.715fbd16.chunk.js.map",
+    "runtime-main.js": "/Drum-Machine/static/js/runtime-main.4cd3f1d6.js",
+    "runtime-main.js.map": "/Drum-Machine/static/js/runtime-main.4cd3f1d6.js.map",
+    "static/css/2.818011ed.chunk.css": "/Drum-Machine/static/css/2.818011ed.chunk.css",
+    "static/js/2.d534290f.chunk.js": "/Drum-Machine/static/js/2.d534290f.chunk.js",
+    "static/js/2.d534290f.chunk.js.map": "/Drum-Machine/static/js/2.d534290f.chunk.js.map",
+    "index.html": "/Drum-Machine/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/Drum-Machine/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.90214933.chunk.css.map": "/Drum-Machine/static/css/main.90214933.chunk.css.map",
+    "static/js/2.d534290f.chunk.js.LICENSE.txt": "/Drum-Machine/static/js/2.d534290f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.34089336.js",
+    "static/js/runtime-main.4cd3f1d6.js",
     "static/css/2.818011ed.chunk.css",
     "static/js/2.d534290f.chunk.js",
     "static/css/main.90214933.chunk.css",
